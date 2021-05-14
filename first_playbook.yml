@@ -3,7 +3,9 @@
 - name: Network Getting Started First Playbook
   collections:
     - cisco.ios
-  connection: ansible.netcommon.network_cli
+  vars:
+    connection: ansible.netcommon.network_cli
+    ansible_python_interpreter: /home/kagarcia/ansible-awx/bin/python
   hosts: all
   gather_facts: false
   tasks:
