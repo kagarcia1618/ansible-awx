@@ -5,6 +5,7 @@
   vars:
     ansible_connection: network_cli
     ansible_network_os: cisco.ios.ios
+    ansible_python_interpreter: '{{ ansible_playbook_python }}'
   gather_facts: false
   tasks:
 
