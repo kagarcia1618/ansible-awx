@@ -4,7 +4,6 @@
   hosts: all
   vars:
     ansible_connection: network_cli
-    ansible_python_interpreter: /home/kagarcia/ansible-awx/bin/python
     ansible_network_os: cisco.ios.ios
   gather_facts: false
   tasks:
