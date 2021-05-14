@@ -3,7 +3,7 @@
 - name: Network Getting Started First Playbook
   hosts: all
   gather_facts: false
-  connection: network_cli
+  connection: ansible.netcommon.network_cli
   tasks:
 
     - name: Display the config
