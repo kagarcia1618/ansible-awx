@@ -2,6 +2,9 @@
 
 - name: Network Getting Started First Playbook
   hosts: all
+  gather_facts: false
+  connection: ansible.netcommon.network_cli
+  ansible_python_interpreter: /home/kagarcia/ansible-awx/bin/python
   tasks:
 
     - name: Display the config
