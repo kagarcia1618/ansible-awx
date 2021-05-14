@@ -1,6 +1,8 @@
 ---
 
 - name: Network Getting Started First Playbook
+  collections:
+    - cisco.ios
   connection: ansible.netcommon.network_cli
   hosts: all
   gather_facts: false
